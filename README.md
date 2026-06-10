@@ -45,11 +45,12 @@ The `.env` file inside `backend/` contains **dummy values** for this task submis
 
 ```env
 PORT=5000
-NODE_ENV=development
-MONGODB_URI=mongodb+srv://angelinjinto:DummyPassword123@cluster0.abcde.mongodb.net/portfolio_db
-EMAIL_USER=angelinjinto@gmail.com
-EMAIL_PASS=abcdwxyzefghijkl
-EMAIL_TO=angelinjinto@gmail.com
+MONGODB_URI=your_mongodb_connection_string_here
+EMAIL_USER=your_email_address
+EMAIL_PASS=The_16_character_App_Password #(no spaces)
+# Same Gmail that gets notified when someone fills the form
+EMAIL_TO=your_email_address #receiving address
+# Where your frontend runs (Live Server default)
 FRONTEND_URL=http://127.0.0.1:5500
 ```
 
@@ -149,7 +150,6 @@ You should see:
 | Frontend | HTML5, CSS3, Vanilla JavaScript |
 | Backend | Node.js, Express.js |
 | Database | MongoDB (Mongoose ODM) |
-| Email | Nodemailer + Gmail SMTP |
 | Fonts | Google Fonts (Syne + DM Sans) |
 | Deployment | Netlify (frontend) + Render (backend) |
 
